@@ -1,31 +1,61 @@
-
 .skills_container {
-  height: 300px;
   background-color: #FDD023;
   text-align: center;
   color: #283A49;
   overflow: hidden;
   margin-top: 100px;
+  padding: 40px 20px;  /* เพิ่ม padding แทน height คงที่ */
+}
 
-  & .skills_title {
-    margin-top: 40px;
-    font-family: 'Sarabun', sans-serif;
+.skills_title {
+  margin-bottom: 30px;
+  font-family: 'Sarabun', sans-serif;
+  font-size: 2rem;
+}
 
+.skills_list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* ✅ ให้ไอคอนตัดบรรทัดเมื่อแคบ */
+  list-style: none;
+  gap: 30px; /* เพิ่มช่องไฟแทน margin */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.skills_list li {
+  margin: 10px;
+}
+
+.skills_list li svg {
+  width: 80px;
+  height: 80px;
+}
+
+
+@media (max-width: 768px) {
+  .skills_title {
+    font-size: 1.5rem;
   }
 
-  & .skills_list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 70px;
+  .skills_list {
+    gap: 20px;
+  }
 
-    & li {
-      margin: 0 20px;
+  .skills_list li svg {
+    width: 60px;
+    height: 60px;
+  }
+}
 
-      & svg {
-        width: 80px;
-        height: 80px;
-      }
-    }
+@media (max-width: 480px) {
+  .skills_title {
+    font-size: 1.2rem;
+  }
+
+  .skills_list li svg {
+    width: 50px;
+    height: 50px;
   }
 }
