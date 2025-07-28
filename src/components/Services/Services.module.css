@@ -1,0 +1,105 @@
+/* Services.module.css */
+
+.certificate_section {
+  padding: 80px 20px;
+  background-color: #f0f2f5; /* พื้นหลังสีเทาอ่อนๆ คล้ายในรูป */
+  color: #333333; /* สีตัวอักษรดำ */
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* ใช้ Roboto เป็นฟอนต์หลัก */
+}
+
+.section_title {
+  font-size: 2.8em; /* ปรับขนาดให้ใหญ่ขึ้นตามรูป */
+  margin-bottom: 50px; /* เพิ่มระยะห่างด้านล่าง */
+  color: #283A49; /* สีน้ำเงินเข้มสำหรับหัวข้อ */
+  position: relative;
+  display: inline-block; /* ทำให้สามารถใส่ขีดข้างล่างได้ง่ายขึ้น */
+}
+
+/* เพิ่มขีดสีเหลืองใต้หัวข้อ */
+.section_title::after {
+  content: '';
+  display: block;
+  width: 60px; /* ความยาวของขีด */
+  height: 4px; /* ความหนาของขีด */
+  background-color: #FDD023; /* สีเหลือง */
+  margin: 15px auto 0; /* จัดให้อยู่ตรงกลางและมีระยะห่าง */
+  border-radius: 2px;
+}
+
+
+.certificate_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* ปรับขนาด minmax ให้ใหญ่ขึ้นตามรูป (สองคอลัมน์ใหญ่ๆ) */
+  gap: 30px; /* ระยะห่างระหว่าง card */
+  max-width: 1000px; /* จำกัดความกว้างรวมของ grid */
+  margin: 0 auto;
+}
+
+.certificate_card {
+  background-color: #ffffff; /* สีพื้นหลังของการ์ดเป็นสีขาว */
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* เงาเข้มขึ้นเล็กน้อย */
+  transition: transform 0.3s ease-in-out;
+  text-align: center; /* จัดข้อความตรงกลางการ์ด */
+  display: flex; /* ใช้ flexbox เพื่อจัดองค์ประกอบ */
+  flex-direction: column; /* จัดเรียงในแนวตั้ง */
+  align-items: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+}
+
+.certificate_card:hover {
+  transform: translateY(-8px); /* ยกขึ้นเยอะขึ้น */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* เงาเข้มขึ้นอีก */
+}
+
+.certificate_img {
+  max-width: 100%; /* เต็มความกว้างของการ์ด */
+  height: auto;
+  border-radius: 8px; /* มุมโค้งเล็กน้อย */
+  margin-bottom: 20px; /* ระยะห่างด้านล่างรูปภาพ */
+}
+
+.certificate_title {
+  font-size: 1.5em; /* ขนาดหัวข้อใบประกาศ */
+  margin-bottom: 10px;
+  color: #283A49; /* สีน้ำเงินเข้ม */
+  font-weight: 500; /* หรือ 700 ถ้าต้องการตัวหนามาก */
+}
+
+.certificate_issuer { /* ใช้ชื่อนี้ตามที่เปลี่ยนใน JSX */
+  font-size: 1.1em;
+  color: #666666; /* สีเทาเข้ม */
+  margin-bottom: 5px;
+}
+
+/* หากคุณต้องการใช้ styles.date ก็เพิ่มที่นี่ */
+/* .date {
+  font-size: 0.9em;
+  color: #999999;
+} */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .certificate_grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* ปรับสำหรับแท็บเล็ต */
+    gap: 20px;
+  }
+  .section_title {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate_grid {
+    grid-template-columns: 1fr; /* 1 คอลัมน์สำหรับมือถือ */
+    gap: 15px;
+  }
+  .section_title {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+  }
+  .certificate_card {
+    padding: 20px;
+  }
+}

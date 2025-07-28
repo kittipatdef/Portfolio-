@@ -1,0 +1,83 @@
+.hero_wrapper {
+  height: 90vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.hero_content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 115px;
+}
+
+.text_1 {
+  font-size: 32px;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.text_2 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #283A49;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.text_3 {
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.text_4 {
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.hero_social {
+  display: flex;
+  list-style: none;
+  margin-top: 25px;
+}
+
+.hero_social li {
+  margin-right: 10px;
+}
+
+.hero_social li svg {
+  width: 32px;
+  height: 32px;
+  color: #283A49;
+}
+
+.hero_image img {
+  max-width: 380px; /* เพิ่มขนาดจาก 280px */
+  width: 300%;
+  border-radius: 50%;
+  border: 7px solid #FDD023;
+  box-shadow: 0 4px 20px #283A49;
+  object-fit: cover;
+  margin-right: 150px;
+}
+
+.hero_Hadedescriptio {
+  text-align: left;         /* จัดข้อความชิดซ้าย */
+  margin-left: 0;           /* ไม่ต้องจัดกลาง */
+  margin-right: auto;       /* ดันไปทางซ้าย */
+  max-width: 750px;         /* กำหนดความกว้างเพื่อไม่ให้ยืดเต็มจอ */
+  padding-left: auto;       /* เพิ่ม padding ถ้าต้องการให้มีระยะจากขอบ */
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom:50px;
+}
+
+.hero_descriptio {
+    margin-bottom:30px;
+    font-size: 3rem;
+    font-family:'Rubik', sans-serif;
+}
+

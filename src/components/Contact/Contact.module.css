@@ -1,0 +1,87 @@
+.contact_wrapper {
+  color: #283A49; /* สีตัวอักษรขาว */
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'roboto', sans-serif; /* หรือ font ที่คุณต้องการ */
+}
+
+.contact_title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact_description {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.contact_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 คอลัมน์สำหรับจอใหญ่, ปรับตามขนาดจอ */
+  gap: 30px; /* ระยะห่างระหว่าง card */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact_card {
+  background-color: #FDD023; /* สีพื้นหลังของแต่ละ card */
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact_card:hover {
+  transform: translateY(-5px);
+}
+
+.contact_icon {
+  font-size: 3em;
+  color: #ffffff; /* สีไอคอน */
+  margin-bottom: 15px;
+}
+
+.card_title {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card_content {
+  font-size: 1em;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact_grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 2 คอลัมน์สำหรับแท็บเล็ต */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact_grid {
+    grid-template-columns: 1fr; /* 1 คอลัมน์สำหรับมือถือ */
+  }
+  .contact_title {
+    font-size: 2em;
+  }
+  .contact_description {
+    font-size: 1em;
+  }
+  .contact_card {
+    padding: 25px;
+  }
+ 
+
+  }

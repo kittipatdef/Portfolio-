@@ -1,0 +1,31 @@
+
+.skills_container {
+  height: 300px;
+  background-color: #FDD023;
+  text-align: center;
+  color: #283A49;
+  overflow: hidden;
+  margin-top: 100px;
+
+  & .skills_title {
+    margin-top: 40px;
+    font-family: 'Sarabun', sans-serif;
+
+  }
+
+  & .skills_list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 70px;
+
+    & li {
+      margin: 0 20px;
+
+      & svg {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
