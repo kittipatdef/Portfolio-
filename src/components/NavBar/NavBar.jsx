@@ -35,10 +35,10 @@ function Navbar() {
           <div className={styles.button}>
             <ul>
               {/* เปลี่ยน href เป็น onClick */}
-              <li><a onClick={(e) => handleClick(e, "Home")}>Home</a></li>
-              <li><a onClick={(e) => handleClick(e, "Skills")}>Skills</a></li>
-              <li><a onClick={(e) => handleClick(e, "certificate")}>Certificate</a></li> {/* ID ใน Certificate component คือ "certificate" (ตัวเล็ก) */}
-              <li><a onClick={(e) => handleClick(e, "Contact")}>Contact</a></li>
+              <li className="A"><a onClick={(e) => handleClick(e, "Home")}>Home</a></li>
+              <li className="A"><a onClick={(e) => handleClick(e, "Skills")}>Skills</a></li>
+              <li className="A"><a onClick={(e) => handleClick(e, "certificate")}>Certificate</a></li> {/* ID ใน Certificate component คือ "certificate" (ตัวเล็ก) */}
+              <li className="A"><a onClick={(e) => handleClick(e, "Contact")}>Contact</a></li>
             </ul>
           </div>
         </div>

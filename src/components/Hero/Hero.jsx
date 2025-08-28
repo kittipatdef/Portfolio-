@@ -16,8 +16,8 @@ function Hero() {
             <h3 className={styles.text_2}>นายกิตติพัฐต์ ฉลองชน</h3>
             <p className={styles.text_3}>
               <TypeAnimation
-                sequence={["Java Developer", 1000]}
-                speed={25}
+                sequence={["Java Developer","Front-End Developer", 1000]}
+                speed={30}
                 repeat={Infinity}
               />
             </p>

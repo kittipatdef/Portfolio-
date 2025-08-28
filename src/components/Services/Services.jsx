@@ -7,6 +7,8 @@ import profileImg1 from '../../assets/1.png'; // ตรวจสอบ path จ�
 import profileImg2 from '../../assets/2.png'; // ตรวจสอบ path จริงในโปรเจกต์ของคุณ
 import profileImg3 from '../../assets/3.png'; // ตรวจสอบ path จริงในโปรเจกต์ของคุณ
 import profileImg4 from '../../assets/4.png'; // ตรวจสอบ path จริงในโปรเจกต์ของคุณ
+import profileImg5 from '../../assets/5.png'; // ตรวจสอบ path จริงในโปรเจกต์ของคุณ
+import profileImg6 from '../../assets/6.png'; // ตรวจสอบ path จริงในโปรเจกต์ของคุณ
 
 const certificates = [
   {
@@ -28,6 +30,16 @@ const certificates = [
     title: 'Data Science',
     issuer: 'Thaimook',
     image: profileImg4,
+  },
+    {
+    title: 'Introduction to JavaScript',
+    issuer: 'BorntoDev',
+    image: profileImg5,
+  },
+    {
+    title: 'Lite : Fundamental Web Dev with HTML5 & CSS3',
+    issuer: 'BorntoDev',
+    image: profileImg6,
   },
 ];
 
