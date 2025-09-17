@@ -15,13 +15,8 @@ function Hero() {
             <p className={styles.text_1}>สวัสดีครับ ผมชื่อ </p>
             <h3 className={styles.text_2}>นายกิตติพัฐต์ ฉลองชน</h3>
             <p className={styles.text_3}>
-              <TypeAnimation
-                sequence={["Java Developer","Front-End Developer", 1000]}
-                speed={30}
-                repeat={Infinity}
-              />
-            </p>
 
+            </p>
             <p className={styles.hero_Hadedescriptio}>
               สวัสดีครับ ชื่อเล่นภูมิ เป็นนักศึกษาจากมหาวิทยาลัยพะเยา คณะเทคโนโลยีสารสนเทศและการสื่อสาร สาขาวิทยาการคอมพิวเตอร์ ชั้นปีที่ 4 มีความสนใจในการพัฒนาเว็บไซต์และเรียนรู้เทคโนโลยีใหม่ ๆ อยู่เสมอ พัฒนาทักษะด้วยตนเอง และมีพื้นฐานด้าน HTML, CSS และ Machine Learning มีความสนใจในการเรียนรู้ภาษา Java และสามารถทำงานร่วมกับผู้อื่นได้เป็นอย่างดี
             </p>
